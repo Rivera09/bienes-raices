@@ -77,6 +77,8 @@ img {
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
+  border: none;
+  cursor: pointer;
 }
 .boton-amarillo {
   background-color: #e08709;
@@ -330,6 +332,55 @@ img {
   align-items: center;
 }
 /* Contacto */
+form p{
+  font-size: 1.5rem;
+  color: #4f4f4f;
+  margin:0;
+}
+
+form p:not(:first-of-type){
+  margin: 2rem 0 0 0;
+}
+
+legend{
+  font-size: 2rem;
+  color: #4f4f4f;
+}
+
 label{
   display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input:not([type="submit"]),
+textarea,
+select{
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.forma-contacto{
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="radio"]{
+  margin-bottom: 0;
+  width: auto;
+}
+
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea{
+  height: 20rem;
 }

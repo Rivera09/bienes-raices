@@ -54,8 +54,36 @@
 
         <fieldset>
           <legend>Información sobre propiedad</legend>
+          <label for="opciones">Vende o compra</label>
+          <select id="opciones">
+            <option value="" selected disabled>-- Seleccione --</option>
+            <option value="">vende</option>
+            <option value="">Compra</option>
+          </select>
+          <label for="cantidad">cantidad</label>
+          <input type="number" id="cantidad" />
         </fieldset>
-        <input type="submit" value="Enviar" />
+        <fieldset>
+          <legend>Contacto</legend>
+          <p>¿cómo desea ser contactado?</p>
+          <div class="forma-contacto">
+            <label for="radio-tel">Teléfono</label>
+            <input type="radio" name="forma-contacto" id="radio-tel" />
+
+            <label for="radio-email">email</label>
+            <input type="radio" name="forma-contacto" id="radio-email" />
+          </div>
+
+          <p>
+            Si elegió teléfono, por favor especifique la fecha y hora de la
+            llamada
+          </p>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" />
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" min="09:00" max="18:00" />
+        </fieldset>
+        <input type="submit" value="Enviar" class="boton boton-verde" />
       </form>
     </main>
     <footer class="site-footer seccion">
